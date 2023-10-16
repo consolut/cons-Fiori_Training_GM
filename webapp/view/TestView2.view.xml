@@ -1,0 +1,13 @@
+<mvc:View controllerName="demo.project1061023338.controller.TestView2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <!-- <form:SimpleForm id="idSimpleForm1" >
+                <Label id="idLabel1" text="My Label" labelFor="idText1" />
+                <Text id="Text1" text="Hello World from View 2" />
+            </form:SimpleForm> -->
+            <core:Fragment fragmentName="demo.project1061023338.fragments.MyForm" type="XML" />
+        </content>
+    </Page>
+</mvc:View>

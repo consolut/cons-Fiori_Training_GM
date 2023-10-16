@@ -1,0 +1,25 @@
+{
+    "people": [
+        {
+            "FirstName": "G",
+            "LastName": "M",
+            "Residence": "Drama",
+            "Age": 27,
+            "OwnsACar": true
+        },
+        {
+            "FirstName": "R",
+            "LastName": "S",
+            "Residence": "Athens",
+            "Age": 31,
+            "OwnsACar": true
+        },
+        {
+            "FirstName": "A",
+            "LastName": "M",
+            "Residence": "Patra",
+            "Age": 25,
+            "OwnsACar": false
+        }
+    ]
+}

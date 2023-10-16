@@ -1,0 +1,57 @@
+<mvc:View controllerName="demo.project1061023338.controller.TestView1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <form:SimpleForm id="idSimpleForm1" >
+                <Label id="idLabel1" text="My Label" labelFor="idText1" />
+                <Text id="Text1" text="Hello World" />
+
+                <Label id="idLabel2" text="{i18n>name}" labelFor="idText2"/>
+                <Text id="Text2" text="{employees>FirstName}" />
+                <!-- <Input id="idInput1" value="" placeholder="{i18n>placeholder}" change="onChangeName"/> -->
+
+                <Label id="idLabel3" text="{i18n>surname}" labelFor="idText3"/>
+                <Text id="Text3" text="{employees>LastName}" />
+
+                <Label id="idLabel4" text="{i18n>age}" labelFor="idText4"/>
+                <Text id="Text4" text="{employees>Age}" />
+
+                <Label id="idLabel5" text="{i18n>volume}" labelFor="idText5"/>
+                <Text id="Text5" text="{products>/products/10/Volume}" />
+            
+            </form:SimpleForm>
+            <Table id="TableId" headerText="Task 2" columns = "{tableColumns>/}" items="{products>/products}" >
+                <columns>
+                <Column id="idTableColumns">
+                    <Label id="idTableColumn" text="{tableColumns>name}" />
+                </Column>
+                </columns>
+
+                <items>
+                    <ColumnListItem id="colListItems"  press="onItemNavigation" type="Navigation" >
+                        <Text id="txtItem1" text="{products>ProductId}" />
+                        <Text id="txtItem2" text="{products>MainCategory}" />
+                        <Text id="txtItem3" text="{products>Volume}" />
+                    </ColumnListItem>
+                </items>
+                   <!-- <Column id="column1ID">
+                        <header>
+                            <Label id="columnLabel1" text="Product ID"/>
+                        </header>
+                    </Column>
+                    <Column id="column2ID">
+                        <header>
+                            <Label id="columnLabel2" text="Category"/>
+                        </header>
+                    </Column>
+                    <Column id="column3ID">
+                        <header>
+                            <Label id="columnLabel3" text="Volume"/>
+                        </header>
+                    </Column> -->
+            </Table>
+            <core:Fragment fragmentName="demo.project1061023338.fragments.MyForm" type="XML" />
+        </content>
+    </Page>
+</mvc:View>
